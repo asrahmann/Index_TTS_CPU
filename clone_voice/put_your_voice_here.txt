@@ -1,0 +1,4 @@
+Please delete this file and place your reference audio file (e.g., a .wav or .mp3) in this directory.
+The audio file in this directory will be used as the voice to clone.
+A short, clear sample of 5-10 seconds is recommended.
+The `main.py` script will automatically try to use the first audio file it finds in here.

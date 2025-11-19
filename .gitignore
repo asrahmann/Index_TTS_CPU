@@ -1,0 +1,37 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output files
+output_cloned.wav
+
+# User-specific voice files
+clone_voice/*.wav
+clone_voice/*.mp3
+
+# Model checkpoints
+# The user needs to download these manually.
+# We will keep the directory structure but not the large files.
+index-tts/checkpoints/*
+!index-tts/checkpoints/README.md
+!index-tts/checkpoints/.gitkeep
+
+# Other
+.DS_Store
+*.log
+index-tts/checkpoints/.cache/
+checkpoints/
+
+# Ignore all files in hf_cache, as these are dynamically downloaded model caches
+checkpoints/hf_cache/
+
+# To ensure the clone_voice directory is added to git
+!clone_voice/put_your_voice_here.txt
+
+# Project notes
+project_notes/

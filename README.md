@@ -36,4 +36,30 @@ The output audio will be saved as `output_cloned.wav` in the root directory.
 
 ## About IndexTTS-2
 
-For more information about the IndexTTS-2 model, please see the [important_readme.md](important_readme.md) file.
+IndexTTS-2 is a breakthrough in emotionally expressive and duration-controlled auto-regressive zero-shot text-to-speech.
+
+- [Hugging Face Model](https://huggingface.co/IndexTeam/IndexTTS-2)
+- [GitHub Repository](https://github.com/index-tts/index-tts)
+
+### Acknowledgements
+
+- [tortoise-tts](https://github.com/neonbjb/tortoise-tts)
+- [XTTSv2](https://github.com/coqui-ai/TTS)
+- [BigVGAN](https://github.com/NVIDIA/BigVGAN)
+- [wenet](https://github.com/wenet-e2e/wenet/tree/main)
+- [icefall](https://github.com/k2-fsa/icefall)
+- [maskgct](https://github.com/open-mmlab/Amphion/tree/main/models/tts/maskgct)
+- [seed-vc](https://github.com/Plachtaa/seed-vc)
+
+### Citation
+
+If you find this work helpful, please cite the original paper:
+
+```
+@article{zhou2025indextts2,
+  title={IndexTTS2: A Breakthrough in Emotionally Expressive and Duration-Controlled Auto-Regressive Zero-Shot Text-to-Speech},
+  author={Siyi Zhou, Yiquan Zhou, Yi He, Xun Zhou, Jinchao Wang, Wei Deng, Jingchen Shu},
+  journal={arXiv preprint arXiv:2506.21619},
+  year={2025}
+}
+```

@@ -1,13 +1,13 @@
 # Voice Cloning with IndexTTS-2
 
-This project allows you to clone a voice from an audio file and generate new audio in that voice using IndexTTS-2.
+This project allows you to clone a voice from an audio file and generate new audio in that voice using IndexTTS-2. This version is configured to run on a CPU, so please be aware that inference will be slow.
 
 ## Setup
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-name>
+    git clone https://github.com/asrahmann/Index_TTS_CPU.git
+    cd Index_TTS_CPU
     ```
 
 2.  **Create a virtual environment and install dependencies:**
@@ -18,21 +18,33 @@ This project allows you to clone a voice from an audio file and generate new aud
     ```
 
 3.  **Download Model Checkpoints:**
-    - Download the model checkpoints from the [IndexTTS-2 Hugging Face repository](https://huggingface.co/IndexTeam/IndexTTS-2/tree/main).
-    - Place all the downloaded files into the `index-tts/checkpoints/` directory.
+    - Download all model files from the [IndexTTS-2 Hugging Face repository](https://huggingface.co/IndexTeam/IndexTTS-2/tree/main).
+    - Place all of these downloaded files into the `index-tts/checkpoints/` directory.
 
 4.  **Add Reference Audio:**
-    - Place the `.wav` or `.mp3` audio file of the voice you want to clone into the `clone_voice/` directory.
+    - Place a short (5-10 seconds), clear `.wav` or `.mp3` audio file of the voice you want to clone into the `clone_voice/` directory.
 
 ## Usage
 
-Once the setup is complete, you can run the voice cloning script:
+1.  **Modify the Prompt:**
+    - Open the `main.py` file.
+    - Find the line that says: `text = "Your Text Here"`
+    - Change the text inside the quotes to whatever you want the cloned voice to say.
 
-```bash
-python main.py
-```
+2.  **Run the script:**
+    - Once the setup is complete and you have modified the prompt, you can run the voice cloning script:
+    ```bash
+    python main.py
+    ```
 
-The output audio will be saved as `output_cloned.wav` in the root directory.
+## User Experience
+
+When you run `python main.py`:
+
+1.  The script will load the IndexTTS-2 model. You will see model loading messages in your console.
+2.  It will then perform voice cloning and text-to-speech synthesis. **This step will take a significant amount of time on a CPU.** Please be patient.
+3.  Once finished, the output audio will be saved as `output_cloned.wav` in the root directory. You can then play this file to hear the result.
+
 
 ## About IndexTTS-2
 
@@ -49,7 +61,7 @@ IndexTTS-2 is a breakthrough in emotionally expressive and duration-controlled a
 - [wenet](https://github.com/wenet-e2e/wenet/tree/main)
 - [icefall](https://github.com/k2-fsa/icefall)
 - [maskgct](https://github.com/open-mmlab/Amphion/tree/main/models/tts/maskgct)
-- [seed-vc](https://github.com/Plachtaa/seed-vc)
+- [seed-vc](.DS_Store)
 
 ### Citation
 

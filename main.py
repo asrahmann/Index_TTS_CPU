@@ -31,7 +31,7 @@ def main():
     checkpoints_dir = "index-tts/checkpoints"
     config_path = os.path.join(checkpoints_dir, "config.yaml")
     output_path = "output_cloned.wav"
-    text_to_clone = "I-It's not like I wanted to test this voice cloning thing for you! I'm just... curious, that's all! So don't go thinking this means anything, got it?"
+    text_to_clone = "Your Text Here"
 
     # --- Pre-run Checks ---
     # 1. Check if the checkpoints directory and config file exist
